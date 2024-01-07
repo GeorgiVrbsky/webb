@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <title>Level 0</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h2 class="inside_level_heading">Co je to programování?</h2>
+        <p class="level_text">
+            Jelikož počítače komunikují v binární(dvojkové) soustavě, je pro 
+            normálního člověka nemožné říci něco počítači pouze pomocí jedniček a 
+            nul. Proto byly vytvořeny programovací jazyky. Ty nám umožnují 
+            komunikovat s počítačem pomocí jednoduchých instrukcí, které my zadáme. 
+        </p>
+        <p class="level_text">
+            Tyto instrukce jsou poté přeneseny do takzvaného strojového kódu. 
+            To jsou naše jedničky a nuly. 
+        </p>
+        <img src="img/Machine_Code.jpeg" alt="Machine Code">
+        <p class="level_text">
+            Protože na počítači děláme spoustu věcí, existují také odlišné 
+            programovací jazyky, které dělají jiné věci. Můžeme je rozdělit na dvě 
+            velké kategorie. To jsou <b>Low-Level</b> a <b>High-Level</b>. 
+        </p>
+        <p class="level_text">
+            <b>Low-Level</b>: Tyto programovací jazyky mají menší počet instrukcí v sadě.
+            Většinou jsou tyto jazyky svojí jednoduchostí lépe čitelné strojem,
+            tudíž program, který v nich děláme je velice rychlý, ale není tak dobře 
+            čitelný lidským okem a hlavně mozkem. 
+        </p>
+        <p class="level_text">
+            Teď si povíme něco o jednom <u>Low-Level</u> jazyku. Nejstarším a v dnešní době hodně
+            používaným jazykem je <b>Assembly</b>. Tento jazyk slouží pro přímé
+            komunikování s počítačovým hardwarem. Takže v něm píšete, jaké napětí má 
+            mít tato součástka, jaký proud jde tudy a podobné jednoduché instrukce.
+        </p>
+        <p class="level_text">Tento kód v <b>Assembly</b> slouží k vypsání "Hello World!":</p>
+        <img src="img/assembly.jpg" alt="Assembly Hello World!">
+        <p class="level_text">
+            <b>High-Level</b>: Teď si pojďme říct, co je to <u>High-Level</u> a jak je spojený s  
+            <u>Low-Levelem</u>. Už jenom z názvu těchto odborných termínů nám dojde, že 
+            jsou na sobě nějak napojený. A je tomu tak. High-Level je vlastně opak 
+            Low-Levelu. Pro počítač je hůře čitelný, protože už má celkem dost sad 
+            instrukcí, které může využívat. To ho děla pomalejší, ale pro člověka je 
+            mnohem lépe čitelný než přemísťování jednotlivých napětí po základní desce.
+        </p>
+        <p class="level_text">
+            Skvělý příklad je <b>Python</b>. Když ho čtete, tak si občas můžete přijít, že 
+            čtete nějakou pasáž z knížky. Python vyplývá z anglického jazyka, tudíž 
+            pokud umíte anglicky, tak nějakým částem kódu budete rozumět, i když 
+            jste nikdy před tím neprogramovali. Díky své skvělé čitelnosti je o 
+            hodně pomalejší než třeba <u>Assembly</u>. Když říkám pomalejší, tak tím myslím 
+            pár sekund při větších projektech. Rozhodně nebudete čekat o hodinu
+            déle, když program napíšete v Pythonu, a ne v Assembly.
+        </p>
+        <p class="level_text">Napsání "Hello World!" v <b>Pythonu</b>:</p>
+        <img src="img/Python.png" alt="Python Hello World">
+        <p class="level_text" >
+            Dále bych si vysvětlil pojem <b>tagovací</b> jazyky, protože si tento pojem 
+            hodně lidí plete právě z <u>programovacím</u> jazykem. Příklad tagovacích 
+            jazyků jsou jazyky, které se používají pro tvorbu webových stránek. Ze 
+            jména <b>HTML</b> a <b>CSS</b>. Programovací jazyk musí mít logiku v sobě. To tyto 
+            jazyky nemají. Zde jenom označujete, jaký komponent má být kde a jakou 
+            má mít barvu a velikost. V HTML třeba nemůžete udělat kalkulačku. A 
+            pokud si říkáte, že jste byli na nějakých webech, kde mají kalkulačku, 
+            tak to nebylo HTML, ale ve většině případů to bude JavaScript. Ten už v 
+            sobě má logiku, tudíž může dělat věci, které jsou k tomu potřeba. 
+        </p>
+        <p class="otazky">Otázka z tohoto levelu:</p>
+        <p class="level_text">Jaký programovací jazyk z uvedených je považován za High-Level?</p>
+        <div class="questions">
+        <button id="1" onclick="question_level_0('HTML',0)" class="round_question_start"><div class="button_questions">HTML</div></button>
+        <button id="2" onclick="question_level_0('PYTHON',0)" class="round_question_other"><div class="button_questions">PYTHON</div></button>
+        <button id="3" onclick="question_level_0('ASSEMBLY',0)" class="round_question_other"><div class="button_questions_long">ASSEMBLY</div></button>
+        <button id="4" onclick="question_level_0('CSS',0)" class="round_question_other"><div class="button_questions">CSS</div></button>
+        </div>
+    </body>
